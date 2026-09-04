@@ -1,16 +1,96 @@
-# React + Vite
+# Hello Pretty 💗
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[svg](https://github.com/Mollytovvv/Hello-Pretty#hello-pretty)
 
-Currently, two official plugins are available:
+A small interactive web project created as a fun surprise for my partner.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hello Pretty is a personalized invitation experience featuring interactive elements, animations, movie selections, and a simple confirmation flow.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[svg](https://github.com/Mollytovvv/Hello-Pretty#features)
 
-## Expanding the ESLint configuration
+### Invitation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[svg](https://github.com/Mollytovvv/Hello-Pretty#invitation)
+
+* Personalized invitation
+* Interactive invitation flow
+* Custom animations
+* Responsive design
+* Fun interactive elements
+
+### Movie Selection
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#movie-selection)
+
+* Interactive movie cards
+* Movie selection
+* Personalized movie choices
+
+### Confirmation
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#confirmation)
+
+* Invitation confirmation
+* Personalized confirmation screen
+* Confirmation email
+
+## Technology Stack
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#technology-stack)
+
+* React
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+* Node.js
+* Serverless Functions
+* Git
+
+## Running the Project
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#running-the-project)
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## Project Status
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#project-status)
+
+**Completed Personal Project 💗**
+
+Hello Pretty was created as a fun and personalized web project for my partner.
+
+## Purpose
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#purpose)
+
+This project was created simply to make something personal and memorable rather than as a professional or commercial application.
+
+It was also a fun opportunity to experiment with React, animations, interactive components, and creative web design.
+
+## Author
+
+[svg](https://github.com/Mollytovvv/Hello-Pretty#author)
+
+**Ralph Michael M. Molina**
+
+GitHub: Mollytovvv
