@@ -1,0 +1,198 @@
+/* ========================================
+   CONFIRMATION
+   ======================================== */
+
+.confirmation {
+  position: relative;
+  z-index: 1;
+
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(112, 72, 125, 0.22),
+      transparent 40%
+    ),
+    #08080c;
+}
+
+.confirmation-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* ========================================
+   EMAIL CONFIRMATION
+   ======================================== */
+
+.email-note {
+  margin: -10px 0 22px !important;
+
+  color: #777783 !important;
+
+  font-size: 0.85rem !important;
+}
+
+/* ========================================
+   SAD CAT
+   ======================================== */
+
+.sad-cat {
+  width: 220px;
+  max-width: 60vw;
+
+  margin-bottom: 20px;
+
+  object-fit: contain;
+
+  border-radius: 16px;
+}
+
+
+/* ========================================
+   JOLLIBEE TWERK
+   ======================================== */
+
+.jollibee-twerk {
+  width: 180px;
+  max-width: 55vw;
+
+  margin-bottom: 20px;
+
+  object-fit: contain;
+}
+
+
+/* ========================================
+   CONFIRMATION TEXT
+   ======================================== */
+
+.confirmation-content h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 10vw, 5.5rem);
+}
+
+.confirmation-content p {
+  margin: 18px 0 22px;
+
+  color: #aaaab5;
+
+  font-size: 1.1rem;
+}
+
+.confirmation-content span {
+  font-size: 1.5rem;
+}
+
+
+/* ========================================
+   BACK BUTTON
+   ======================================== */
+
+.back-button {
+  margin-top: 28px;
+
+  padding: 10px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.04);
+  color: #aaaab5;
+
+  font-size: 0.75rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-color: rgba(255, 255, 255, 0.22);
+
+  color: #ffffff;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+  .sad-cat {
+    width: 180px;
+    max-width: 55vw;
+
+    margin-bottom: 18px;
+  }
+
+  .jollibee-twerk {
+    width: 160px;
+    max-width: 55vw;
+
+    margin-bottom: 18px;
+  }
+
+  .confirmation-content h1 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .confirmation-content p {
+    margin: 14px 0 18px;
+
+    font-size: 1rem;
+  }
+
+  .confirmation-content span {
+    font-size: 1.3rem;
+  }
+
+  .back-button {
+    margin-top: 24px;
+  }
+}
+
+
+/* ========================================
+   VERY SMALL PHONES
+   ======================================== */
+
+@media (max-width: 380px) {
+  .sad-cat {
+    width: 160px;
+    max-width: 55vw;
+  }
+
+  .jollibee-twerk {
+    width: 150px;
+    max-width: 55vw;
+  }
+
+  .confirmation-content p {
+    font-size: 0.95rem;
+  }
+
+  .confirmation-content span {
+    font-size: 1.2rem;
+  }
+}

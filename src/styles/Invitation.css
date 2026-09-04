@@ -1,0 +1,217 @@
+/* ========================================
+   INVITATION
+   ======================================== */
+
+.invitation {
+  position: relative;
+  z-index: 1;
+
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 32px 18px;
+
+  /* Cinematic background glow */
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(112, 72, 125, 0.2),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(70, 45, 100, 0.15),
+      transparent 30%
+    ),
+    #08080c;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 680px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 9vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.question {
+  margin: 2px 0 16px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+
+  color: #e8e8ed;
+}
+
+
+/* ========================================
+   ACTIONS / BUTTONS
+   ======================================== */
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  width: 100%;
+}
+
+.yes-button,
+.maybe-button {
+  width: 160px;
+  height: 44px;
+
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* Primary button */
+
+.yes-button {
+  border: 1px solid #ffffff;
+
+  background: #ffffff;
+  color: #111116;
+}
+
+.yes-button:hover {
+  box-shadow: 0 8px 28px rgba(255, 255, 255, 0.14);
+}
+
+
+/* Secondary button */
+
+.maybe-button {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.maybe-button:hover {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Response text */
+
+.please-text {
+  position: absolute;
+
+  top: calc(100% + 8px);
+
+  color: #aaaab5;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+  .invitation {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 15vw, 4.2rem);
+  }
+
+  .question {
+    margin: 2px 0 14px;
+
+    font-size: 1.15rem;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+
+  .yes-button,
+  .maybe-button {
+    width: auto;
+    min-width: 145px;
+    height: 42px;
+
+    padding: 0 14px;
+
+    font-size: 0.72rem;
+  }
+}
+
+
+/* ========================================
+   VERY SMALL PHONES
+   ======================================== */
+
+@media (max-width: 380px) {
+  .invitation {
+    padding: 20px 12px;
+  }
+
+  .actions {
+    gap: 6px;
+  }
+
+  .yes-button,
+  .maybe-button {
+    min-width: 0;
+    width: 48%;
+
+    padding: 0 8px;
+
+    font-size: 0.68rem;
+  }
+}

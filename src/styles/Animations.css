@@ -1,0 +1,185 @@
+/* ========================================
+   AMBIENT GLOW
+   ======================================== */
+
+.ambient-glow {
+  position: fixed;
+
+  width: 600px;
+  height: 600px;
+
+  top: -300px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: rgba(120, 100, 160, 0.08);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* ========================================
+   MOON
+   ======================================== */
+
+.moon {
+  position: fixed;
+
+  width: 90px;
+  height: 90px;
+
+  top: 9%;
+  right: 10%;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 0 30px rgba(255, 255, 255, 0.2),
+    0 0 100px rgba(160, 150, 190, 0.15);
+
+  opacity: 0.7;
+
+  pointer-events: none;
+  z-index: 0;
+
+  animation: moonGlow 5s infinite ease-in-out;
+}
+
+
+/* ========================================
+   PARTICLES
+   ======================================== */
+
+.particles {
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+  overflow: hidden;
+
+  z-index: 0;
+}
+
+.particles span {
+  position: absolute;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  opacity: 0.25;
+
+  animation: floatParticle 8s infinite ease-in-out;
+}
+
+
+/* Particle positions */
+
+.particles span:nth-child(1) {
+  left: 12%;
+  top: 25%;
+  animation-delay: 0s;
+}
+
+.particles span:nth-child(2) {
+  left: 25%;
+  top: 70%;
+  animation-delay: 1s;
+}
+
+.particles span:nth-child(3) {
+  left: 42%;
+  top: 15%;
+  animation-delay: 2s;
+}
+
+.particles span:nth-child(4) {
+  left: 60%;
+  top: 75%;
+  animation-delay: 3s;
+}
+
+.particles span:nth-child(5) {
+  left: 73%;
+  top: 35%;
+  animation-delay: 1.5s;
+}
+
+.particles span:nth-child(6) {
+  left: 85%;
+  top: 65%;
+  animation-delay: 2.5s;
+}
+
+.particles span:nth-child(7) {
+  left: 92%;
+  top: 20%;
+  animation-delay: 4s;
+}
+
+.particles span:nth-child(8) {
+  left: 35%;
+  top: 90%;
+  animation-delay: 3.5s;
+}
+
+
+/* ========================================
+   KEYFRAMES
+   ======================================== */
+
+@keyframes floatParticle {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.15;
+  }
+
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes moonGlow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+  .moon {
+    width: 60px;
+    height: 60px;
+
+    top: 6%;
+    right: 8%;
+  }
+
+  .ambient-glow {
+    width: 350px;
+    height: 350px;
+  }
+}

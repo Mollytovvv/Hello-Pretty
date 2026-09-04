@@ -1,0 +1,80 @@
+/* ========================================
+   MOVIE CARD
+   ======================================== */
+
+.movie-card {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 18px;
+  margin: 0 auto 32px;
+
+  max-width: 500px;
+
+  text-align: left;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+.movie-poster {
+  width: 110px;
+  height: 150px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.movie-info span {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+
+  color: #9696a3;
+}
+
+.movie-info h2 {
+  margin: 8px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.movie-info p {
+  margin: 0;
+
+  color: #9d9da8;
+  font-size: 0.9rem;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+  .movie-card {
+    gap: 15px;
+    padding: 14px;
+  }
+
+  .movie-poster {
+    width: 90px;
+    height: 125px;
+  }
+
+  .movie-info h2 {
+    font-size: 1.5rem;
+  }
+}
