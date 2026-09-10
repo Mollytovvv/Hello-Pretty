@@ -22,8 +22,8 @@ function App() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          movie: 'Twilight',
-          date: 'September 04, 2026',
+          movie: 'Ayala',
+          date: 'September 12, 2026',
           time: "Whenever you're done with work.",
         }),
       })
