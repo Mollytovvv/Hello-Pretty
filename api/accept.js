@@ -23,7 +23,7 @@ export default async function handler(req, res) {
 
     const { data, error } = await resend.emails.send({
       from: 'Software Engr. Molina <hello@ralphmolina.dev>',
-      to: 'molinarap00@gmail.com',
+      to: 'rinoakatedelacruz@gmail.com',
       subject: 'She said yes. 🍿❤️',
       html: ConfirmationEmail({
         movie,
