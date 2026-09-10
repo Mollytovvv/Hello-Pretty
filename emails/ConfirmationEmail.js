@@ -277,7 +277,7 @@ function ConfirmationEmail({ movie, date, time, posterUrl }) {
                               text-transform: uppercase;
                             "
                           >
-                            MOVIE DATE
+                            MOVIE 
                           </p>
 
                           <h2
