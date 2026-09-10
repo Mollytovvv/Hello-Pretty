@@ -192,7 +192,7 @@ function ConfirmationEmail({ movie, date, time, posterUrl }) {
                         line-height: 1.6;
                       "
                     >
-                      You said yes to movie night.
+                      You said yes to movie date.
                     </p>
 
                   </td>
@@ -277,7 +277,7 @@ function ConfirmationEmail({ movie, date, time, posterUrl }) {
                               text-transform: uppercase;
                             "
                           >
-                            MOVIE NIGHT
+                            MOVIE DATE
                           </p>
 
                           <h2
@@ -347,8 +347,7 @@ function ConfirmationEmail({ movie, date, time, posterUrl }) {
                         line-height: 1.6;
                       "
                     >
-                      Grab some snacks if trip mo haha.<br />
-                      See you tonight on discord. 🍿🎬
+                      I love you Pretty Girl! ❤️
                     </p>
 
                   </td>
