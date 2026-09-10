@@ -90,7 +90,7 @@ function App() {
 
               <h1>It's a date!</h1>
 
-              <p>See you tonight, pretty.</p>
+              <p>See you on September 12 (Saturday) Pretty Girl!  .</p>
 
               <p className="email-note">
                 Check your email for confirmation. 
